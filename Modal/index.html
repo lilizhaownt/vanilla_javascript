@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Project #6: Dynamic content website with modal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--icon library-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--------------------->
+    <link rel="stylesheet" href="styleSheet.css" />
+</head>
+<body>
+
+<!----------top Navbar------->
+<nav class = "topNav" id ="changeNav">
+    <img src="TreeOfLife.jpg" class ="logo" alt ="tree of Life">
+    <span id ="CD"> Challenging Deep</span>
+    <!--tabs-->
+    <div class = "tabs">
+        <a href="#Home" class ="tabs">Home</a>
+        <a href="#Learn" class ="tabs" id ="changeModal" onclick ="showModal()">Learn More</a>
+        <a href="#Debt" class ="tabs">Debt</a>
+        <a href="#Investment" class ="tabs">Investment</a>
+        <a href="#Saving" class ="tabs">Saving</a>
+        <a href="Contact" class ="tabs">Contact</a>
+    </div>
+    
+    <!--open bar button-->
+        <button class = "open" onclick ="showNav()">
+            <i class ="fa fa-bars"></i>
+        </button>
+</nav>
+<!----------------content------------>
+<div class ="message">  
+    <h1>If money was not a problem...</h1>
+</div>
+<!--bottom nav-->
+<nav class="bottomNav">
+    <!--social media-->
+    <div class = "socialmedia">
+        <a href ="#"><i class="fab fa-facebook-square"></i></a>
+        <a href ="#"><i class="fab fa-twitter-square"></i></a>
+        <a href ="#"><i class="fab fa-reddit-square"></i></a>
+        <a href ="#"><i class="fab fa-instagram-square"></i></a>
+        <a href="#"><i class="fab fa-pinterest-square"></i></a>
+    </div>
+</nav>
+<!----------modal-------------------->
+<div class ="modal">
+    <div class ="modal-content">
+        <span class = "close" onclick = "closeModal()">&times;</span>
+        <p id ="achieve">Achieve financial freedom today.</p>
+        <p id="subscribe">Subscribe to get a free weekly newsletter</p>
+        <form action ="/action_page.php">
+            <label for ="email">Enter your email:</label><br><br>
+            <input type ="email" id="email" name = "email"><br><br>
+            <input id ="submit" type ="Submit">
+        </form>
+    <!----submit button-->
+    <div>
+</div>
+<script src = "app.js"></script>
+</body>
+</html>

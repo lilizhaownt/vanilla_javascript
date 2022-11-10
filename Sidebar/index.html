@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Project #5: Dynamic Side bar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--icon library-->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--------------------->
+    <link rel="stylesheet" href="styleSheet.css" />
+</head>
+<body>
+
+<!--Sidebar-->
+    <div class = "side-bar" id ="sideNav">
+        <img src ="ribbon.png" id ="logo">
+        
+        <button class="closebtn" onclick="closeNav()">&times;</button>
+        <div class = "tabs">
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#Local Specialists">Local Specialist</a>
+        <a href="#Clinical Trials">Clinical Trials</a>
+        <a href="#Support Group">Support Group</a>
+        <a href="#Donate">Donate</a>
+        <a href="#Clinical Trials">Clinical Trials</a>
+        <a href="Contact">Contact</a>
+        </div>
+    </div>
+
+<!---content-->
+    <div class = "content">
+        <div class = "socialmedia">
+             <a href ="#"><i class="fab fa-facebook-square"></i></a>
+            <a href ="#"><i class="fab fa-twitter-square"></i></a>
+            <a href ="#"><i class="fab fa-reddit-square"></i></a>
+            <a href ="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="#"><i class="fab fa-pinterest-square"></i></a>
+           <a href ="#"><i class="fas fa-store"></i></a>
+        
+        <button onclick ="openNav()">
+            <i class ="fa fa-bars"></i>
+        </button>
+        </div>
+        
+    <div class = "message">
+        <h1>Breast Cancer Society of Loudoun</h1>
+        <h3>We are here for you</h3>
+    </div>
+
+    <script src = "app.js"></script>
+</body>
+</html>

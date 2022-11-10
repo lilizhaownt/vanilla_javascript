@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Project #4: Dynamic navigation bar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--icon library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--------------------->
+    <link rel="stylesheet" href="styleSheet.css" />
+</head>
+<body>
+    <div class = "cloud"></div>
+    <div class = "navbar" id="change">
+<!-------Logo-->
+        <div class = "logo">
+            <img src ="ocean.png" alt ="ocean">
+            
+            <div class = "logo" id
+            ="logo-word">Challenging<br>Deep</div>        
+        </div>
+<!--tabs-------------->
+        <div class = "tabs">
+            <a href ="#About" class ="tabs" > About </a>
+            <a href ="#Skills" class = "tabs"> Skills </a>
+            <a href = "#Projects" class = "tabs"> Projects </a>
+            <a href = "#contact" class = "tabs">Contact </a>
+        </div>
+<!---icons-->
+        <div class ="icons">
+            <a href ="#" class = "fa fa-facebook" class="icons"></a>
+            <a href ="#" class ="fa fa-twitter" class="icons"></a>
+            <a href ="#" class ="fa fa-linkedin" class="icons"></a>
+            <a href ="#" class ="fa fa-instagram" class="icons"></a>
+        </div>
+<!---toggle icon-->
+        <div class ="toggle">
+            <a href="javascript:void(0)" class ="toggle" onclick ="show()">
+                <i class ="fa fa-bars" id = "togo"></i>
+            </a>
+        </div>
+    </div>
+
+<!---Message-->
+    <h1 class ="message">Let us take your business to the next level</h1>
+    <script src = "app.js"></script>
+</body>
+</html>

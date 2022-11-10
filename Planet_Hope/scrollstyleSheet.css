@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{  
+    font-family: 'Righteous', cursive;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+.video{
+    min-width:100%;
+    min-height:100%;
+    position:fixed;
+    top:0;
+    right:0;
+    z-index:-1;
+}
+/**article**/
+article{
+    color:white;
+}
+.navBar-container{
+    padding: 20px 20px 0px 50px;
+}
+#logo > img{
+    width:50px;
+    border-radius:50%;
+}
+#nav-btn{
+    display:none;
+    background:none;
+    border: 2px solid steelblue;
+    border-radius:5px;
+    float:right;
+    transition:all 0.2s ease-in-out;
+    font-size:1rem;
+    padding:5px;
+}
+#nav-btn:hover{
+    color:yellow;
+}
+.navBar-links{
+    padding:10px;
+    float:right;
+}
+li{
+    list-style-type:none;
+    display:inline;
+    padding-right:30px;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+a:hover{
+    text-decoration:underline;
+}
+#title{
+
+    text-align:center;
+    margin-top:30vh;
+    margin-bottom:32vh;
+}
+#title > h1{
+    font-size:5em;
+}
+#title > p{
+    font-size:2em;
+}
+#title > a >button{
+    font-size:1.5em;
+    color:white;
+    background:none;
+    padding:5px;
+    border-radius:10px;
+    border:2px white solid;
+}
+#title > a >button:hover{
+    cursor: pointer;
+    color:bisque;
+}
+@media screen and (max-width:900px){
+.navBar-container{
+    background:white;
+}
+#nav-btn{
+    display:block;
+}
+.navBar-links{
+    float:none;
+    display:none;
+}
+li{
+    display:block;
+    padding:5px;
+}
+a{
+    color:steelblue !important;
+}
+
+}
+/**sections**/
+section{
+    background:rgb(238, 233, 233);
+    text-align:center;
+    font-size:1.3em;
+}
+section > p{
+    text-align:justify;
+    line-height: 1.25em;
+    padding:3em;
+}
+section >h2{
+    background: steelblue;
+    font-size:2em;
+}
+.pictures{
+    padding:20px;
+}
+/**footer**/
+footer{
+    background:grey;
+    text-align:center;
+    padding:30px;
+}
+/**css controlled by javascript**/
+.moveNavbtn{
+    box-shadow: 0px 5px 15px yellow;
+    transform:rotate(90deg)
+}
+.showBar{
+    display:block;
+}
+.fixed-navBar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    color:steelblue;
+    background:white;
+}

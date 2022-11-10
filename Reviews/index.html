@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Project #3: Review</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styleSheet.css" />
+</head>
+<body>
+
+    <h1>Fake Reviews of Amazon Pharmacy</h1>
+    <div class = "container">
+        <a href="https://www.amazon.com/stores/page/5C6C0A16-CE60-4998-B799-A746AE18E19B">
+            <img src ="https://m.media-amazon.com/images/S/stores-image-uploads-na-prod/6/AmazonStores/ATVPDKIKX0DER/b48f9c5431471b20a03159777c78e3ca.w1500.h1500._CR0%2C0%2C1500%2C1500_SX750_SY750_.jpg" alt ="amazon pharmacy">
+        </a>
+        <div class ="review_container">
+            <div class ="flex-container">
+                <img src ="p1.jpg" alt ="review pictures" id = "reviewers">
+                <div class ="q-mark" id ="left-q">&#8220;</div> 
+                <p id= "quote">
+            The cash price is reasonable.  I like not going anywhere. Humen are not fun.  I love machines.
+                </p>  
+                <div class ="q-mark" id ="right-q">&#8221;</div>
+            </div><br>
+            <button onclick ="getReview('left')"><</button>
+            <button onclick = "getReview('right')">></button><br><br>
+            <button onclick = "getReview()">RANDOM</button>
+        </div>
+    <div>
+    <script src = "app.js"></script>
+</body>
+</html>

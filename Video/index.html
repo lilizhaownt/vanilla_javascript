@@ -1,0 +1,33 @@
+<!--Requirement for this Challenge: 1) pre-loader 2) a black screen layover the video 3) javascript controlled buttons for play and pulse.-->
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Project #9: Pre-load video</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="videostyleSheet.css" />
+</head>
+<body>
+<div class = "preloader">
+    <div style='position:relative; padding-bottom:calc(56.25% + 44px)'><iframe src='https://gfycat.com/ifr/AccurateAnnualCoyote' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div><p> <a href="https://gfycat.com/accurateannualcoyote">via Gfycat</a></p>
+   
+</div>
+<div class = "video-container">
+    <video class = "video" muted autoplay loop>
+        <source src = "halloween.mp4" type = "video/mp4">
+        <!--javascript buttons to control play and pulse-->
+    </video>
+</div>
+<div class = "overlay">
+    <div class = "controls-container">
+     <p id = "credit">Video by Monstera from <a href = "https://www.pexels.com/video/halloween-cookies-in-a-spinning-motion-5708639/">Pexels</a></p>
+    <br>
+        <button class ="control-btns" type = "button">
+            <span id = "pause">Pause <span></span>Play</span>
+            <span id = "slide">slides</span>   
+        </button>
+        
+    </div>
+</div>
+    <script src = "videoApp.js"></script>
+</html>

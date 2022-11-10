@@ -1,0 +1,86 @@
+*{  
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    border-radius:10px;
+}
+body{
+    background:lightblue;
+    text-align:center;
+    padding: 50px;
+}
+.form-container{
+    width:80vw;
+    font-size:1.5rem;
+    margin:auto;
+    padding: 30px;
+    display:grid;
+    grid-template-columns: auto auto auto;
+}
+#operations, #quantity, #digits{
+    width:120px;
+    height:30px;
+    text-align:center;
+}
+.display-container{
+    background:white;
+    width:500px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:60% 40%;
+    grid-gap:10px;
+    font-size:3rem;
+    padding:50px;
+   -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 14px 18px rgba(0,0,0,0.28); 
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 14px 18px rgba(0,0,0,0.28);
+}
+#num1{
+    padding-left:50px;
+}
+
+#operation{
+    float:left;
+    width:50px;
+}
+input{
+    width:150px;
+    height:50px;
+    border: 2px solid black;
+    font-size:3rem;
+    text-align:center;
+}
+button{
+   padding:10px;
+   font-size:1rem;
+   font-weight:bold;
+}
+button:hover{
+    cursor: pointer;
+    border: 5px solid goldenrod;
+}
+.accuracy{
+    font-size:1.5rem;
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.numbers, .accuracy{
+    border: 2px solid black;
+    padding:20px;
+}
+
+/***screen adjustment ***/
+@media screen and (max-width:600px){
+    body{
+        padding:0px;
+    }
+    .form-container{
+        display:block;
+    }
+    .display-container{
+        width:95vw;
+        display:block;
+    }
+}

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+*{  
+    font-family: 'Cabin', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+body{
+    text-align:center;
+    padding-top:20px;
+}
+.input{
+    padding:30px;
+}
+label{
+    font-size:1.5rem;
+}
+select{
+    text-align:center;
+    width:250px;
+    font-size:1.25rem;
+}
+
+.section-container{
+    background:white;
+    padding:50px;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    width:90vw;
+    margin:auto;
+}
+
+h4{
+    font-size:2rem;
+}
+
+.content-container > p{
+    font-size:1.5rem;
+}
+.time-display{
+    background:rgb(163, 85, 236);
+    text-align:center;
+    width:23%;
+    padding:10px;
+    font-size:1.25rem;
+    border:none;
+}
+.weather-container{
+    background:linear-gradient(rgb(26, 90, 143),rgb(154, 197, 231));
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color:white;
+}
+
+#weather-icon{
+    width:150px;
+}
+
+/***screen adjustment ***/
+@media screen and (max-width:1100px){
+    img{
+        display:block;
+        margin:auto;
+    }
+    .section-container{
+    display:block;
+    margin:auto;
+    width:100%;
+}
+
+}

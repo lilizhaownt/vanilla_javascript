@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Project #13: Forms and math generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--icon library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--------------------->
+    <link rel="stylesheet" href="mathstyleSheet.css"/>
+</head>
+<body>
+<h1>MATH FLASH CARD</h1>
+<div class = "form-container">
+
+    <form action = "#" class = "choice">
+        <label for ="operations">Choose an operation </label>
+        <select name = "operations" id = "operations">
+            <option value ="blank"></option>
+            <option value ="addition">Addition</option>
+            <option value ="subtraction">Subtraction</option>
+            <option value ="multiplication">Multiplication</option>
+            <option value ="division">Division</option>
+        </select>
+    </form>
+    <form action = "#" class = "choice">
+        <label for ="quantity">Level of difficulty?</label>
+        <select name = "digits" id = "digits">
+            <option value ="blank"></option>
+            <option value = "single">Single Digit</option>
+            <option value = "double">Double Digit</option>
+            <option value = "triple">Tripe Digit</option>
+        </select>
+    </form>
+    <form action = "#" class = "choice">
+        <label for ="quantity">How many problems?</label>
+        <select name = "quantity" id = "quantity">
+            <option value = 5>5</option>
+            <option value = 10>10</option>
+            <option value = 15>15</option>
+            <option value = 20>20</option>
+        </select>
+    </form>
+</div>
+<div class = "display-container">
+    <section class = "numbers">
+        <div id = "num1">0</div>
+         <div id = "operation">+</div>
+        <div id = "num2">0</div>
+        <input type = "text" id ="answer" name = "answer" onmouseover ="clearAns(this)"><br>
+        <button type = "submit" id ="equals">Submit</button>
+    </section>
+    
+    <section class = "accuracy">
+        <div style ="background:lightgreen">Your Ans: <span id = "yourAns">0</span></div>
+        <div style = "background:lightsalmon">Ans: <span id = "ans">0</span></div>
+        <div style ="background:rgb(241, 131, 241)">% Correct: <span id = "percentage">0</span></div>
+        <button type = "submit" style ="background:lightyellow" id ="reset">Reset</button>
+    </section>
+</div>
+<footer>
+    <p>Copyright <span><i class="far fa-copyright"></i> Challenging Deep Website Developer </p>
+</footer>
+<script src ="mathApp.js"></script>
+</body>
+</html>

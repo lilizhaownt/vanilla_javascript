@@ -1,0 +1,70 @@
+*{
+    font-family: 'Georama', sans-serif;
+    font-size: 1.5vw;
+    text-align:center;
+    background:whitesmoke;
+}
+
+.container{
+    display:block;
+    margin:auto;
+    width:75vw;
+    padding:1.5rem;
+}
+
+img{
+    display:relative;
+    float:left;
+    width:35vw;
+    height:35vw;
+}
+
+.review_container{
+    display:relative;
+    float:right;
+    width:35vw;
+    height:35vh;
+}
+
+#reviewers{
+    width:7rem;
+    height:7rem;
+    border:white 10px solid;
+    border-radius:50%;
+    position:relative;
+    left:7rem;
+}
+
+.q-mark{
+    color:lightgreen;
+    font-size:7rem;
+    width:3rem;
+    height:8rem;
+}
+#left-q{
+  position:relative;
+  right:2rem;
+  top:-1.5rem;
+}
+#right-q{
+    position:relative;
+    left:20rem;
+}
+#quote{
+    font-size:0.9rem;
+    padding:5px;
+    width:20rem;
+    height:7rem;
+    position:relative;
+    top:2rem;
+}
+button{
+    background:lightpink;
+    border:white 1px solid;
+    border-radius:5px;
+    position:relative;
+    top:-7rem;
+}
+button:hover{
+    background:lightblue;
+}

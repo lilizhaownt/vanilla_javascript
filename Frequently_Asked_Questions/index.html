@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Project #7: Dynamic frequently asked question webpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <!--icon library-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--------------------->
+    <link rel="stylesheet" href="styleSheet.css" />
+</head>
+<body>
+<!--navigation bar-->
+    <header>
+        
+        <img alt = "fire" src ="fire.jpg">
+        <span id ="CD"> Challenging Deep</span>
+
+        <div class = "tabs">
+            <a href ="#contact" class = "tabs">Contact Us</a>
+            <a href="#Home" class = "tabs">
+            <i class="fa fa-home"></i>
+             Home
+            </a>
+        </div>
+    </header>
+
+<!--content-->
+    <article>
+        <h1>Frequently Asked Questions</h1>
+        <h4>Welcome to <span id ="fire"> FIRE</span> help center </h4>
+        <!--search field-->
+        <div class = "search-container">
+            <form action ="https://google.com/search" method = "GET" class = "form">
+                <input type ="search" placeholder = "How may we help you?" id = "search" name ="search" class ="search-field" >
+                <button type ="submit" class ="search-button">
+                    <img id ="search-glass" src ="searchglass.png">
+                </button>
+            </form>
+        </div>
+
+<!--container for QA and chatbox-->
+    <div class = "grid-container">
+     <!--questions and answer field.  Most FQA sites have then entire question as collapsible and icon as well-->
+        <section class = "QA">
+            <button class ="question">What is FIRE? </button>
+            <div class ="answer">
+                <p>FIRE stands for Financial Indpendance Retire Early</p>
+                <br>
+            </div>
+            <button class ="question">When you retire early, does it mean you don't work?</button>
+            <div class ="answer">
+                <p>Yes and No.  It depends on your personal preference.  Some people retired completely and occupid their time by volunteering or work on interesting projects.  Some continues with their careers but not worry about loosing their job.</p>
+                <br>
+            </div>
+            <button class ="question">How do you retire early?</button>
+            <div class ="answer">
+                <p>You can retire early when you reach financial independance.  In other words, you have enough saving and investment to not have to worry about having a job ever again.</p>
+                <br>
+            </div>
+            <button class ="question">What does it mean to be financial independance?</button>
+            <div class ="answer">
+                <p>Financial Independance is different for each person.  However, the people who achieved FIRE have several characteristics in common: 1) They are debt free including no mortage. 2) They have at least 1 year of emergency saving. 3)They have passive investments that provide a basic income that covers their living expensives for their entire life. 4) They live a modest life. 5) They would not borrow money for items that does not have a return in investments (example: an expensive new car or vacation).</p>
+                <br>
+            </div>
+            <button class ="question">How can I get on FIRE?</button>
+            <div class ="answer">
+                <p>First, you need to ask yourself, "How much money does it take monthly for me to be happy?  If money is no object, what would make me happy?".  Once you answer these questions, you can write a monthly budget that would pay for your desired lifestyle.  Second, set an investment goal based on your monthly budget.</p>
+                <br>
+            </div>
+            <button class ="question">Can you help me setup a budget and investment plan?</button>
+            <div class ="answer">
+                <p>Absolutely! You can call (800)256-7654, e-mail:fire@gmail.com, or send us a <span><a href="#message" onclick ="openChat()">message </a></span> for a free one-time 1 hr consultation.</p>
+                <br>
+            </div>
+            <button class ="question">How much do you charge after the free session?</button>
+            <div class ="answer">
+                <p>If you need more support after the first session, we charge $35-50 per hourly session depending on the level of support.</p>
+                <br>
+            </div>
+            <button class ="question">Where can I find free information about FIRE?</button>
+            <div class ="answer">
+                <p>You are welcome to subscribe to our free monthly newsletter.  We cover a range of topics on successful stories, budgetting, investment strategies, and economic outlooks. </p>
+                <br>
+            </div>
+        </section>
+        <!--section for chat and phone-->
+        <section class ="moreInfo">
+            <div class = "moreInfo-container">
+                <p>Can't find your answer?</p> <br>
+                <button id = "phone">
+                    <i class="fas fa-phone"></i>
+                </button>
+                <span id ="phoneNumber">(800)256-7654</span><br>
+                <button id ="email"><i class="fas fa-envelope"></i></button>
+                <span id = "emailAddress">fire@gmail.com</span>
+            </div>
+            <!--popup chat-->
+            <button class = "open-button" onclick = "openChat()"><i class="fas fa-comment"></i> <span>Chat</span></button>
+
+            <div class ="chat-popup" id ="chat">
+                <form action ="/action" class = "form-container">
+                <span class = "closebtn" onclick = "closeChat()">&times;</span><br><br>
+                <label for="msg">Our agent is currently available to chat.</label><br><br>
+                <textarea placeholder ="Type your message..." name = "msg" required></textarea>
+                <button type ="submit" class ="sendbtn">Send </button>
+            </div>
+        </section> 
+    </div>
+    </article>
+<!--footer-->
+  <footer>
+    <div class = "socialmedia">
+        <a href ="#"><i class="fab fa-facebook-square"></i></a>
+        <a href ="#"><i class="fab fa-twitter-square"></i></a>
+        <a href ="#"><i class="fab fa-reddit-square"></i></a>
+        <a href ="#"><i class="fab fa-instagram-square"></i></a>
+        <a href="#"><i class="fab fa-pinterest-square"></i></a>
+    </div>
+  </footer>
+<script src = "app.js"></script>
+</body>
+</html>

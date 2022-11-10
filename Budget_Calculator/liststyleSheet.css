@@ -1,0 +1,345 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+
+*{  
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+/*global css*/
+header{
+    padding: 100px 200px 0px 200px;
+}
+header >p{
+    padding:30px 0px 0px 0px;
+}
+article{
+    padding: 0px 200px 0px 200px;
+}
+h1{
+    font-size:2rem;
+    padding-bottom:20px;
+}
+
+p{
+    text-align:justify;
+    padding: 0px 0px 50px 0px;
+}
+h2{
+    padding:50px 0px 50px 0px;
+}
+nav{
+    padding:10px 200px 0px 200px;
+    display:flex;
+    justify-content: space-between;
+}
+#links{
+    padding-top:50px;
+}
+#links > a{
+    padding:0px 20px 0px 20px;
+    color:orange;
+}
+#icon{
+    font-size:75px;
+    color:lightgreen;
+    font-weight: bold;
+    font-family: 'Train One', cursive;
+}
+
+ul{
+    padding-left:10px;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+footer{
+   text-align:center;
+   margin-top:100px;
+}
+button{
+    border-radius:5px;
+}
+button:hover{
+    background:lightgreen;
+    color:white;
+    cursor:pointer;
+}
+input{
+    border-radius:5px;
+    padding:5px;
+}
+#graph{
+    width:230px;
+    height:200px;
+    display:block;
+    margin:auto;
+}
+/* this css remove the defualt arrows from input type=number*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/**nav bar**/
+#nav-btn{
+    float:right;
+    padding:10px;
+    width:100px;
+    border-radius:10px;
+}
+/*goal-container*/
+
+.first-container{
+    text-align:center;
+    width:600px;
+    display:block;
+    margin:auto;
+    border-radius:10px;
+    border: 1px solid lightblue;
+    -webkit-box-shadow: 0px 0px 20px 5px lightgreen; 
+    box-shadow: 0px 0px 20px 5px lightgreen ;
+    padding:20px;
+}
+.alert{
+    visibility:hidden;
+    text-align:center;
+}
+.alert-danger{
+    background: salmon;
+    color:white;
+    border-radius:5px;
+    width:350px;
+    margin:auto;
+}
+.alert-success{
+    background:lightgreen;
+    color:white;
+    border-radius:5px;
+    width:350px;
+    margin:auto;
+}
+.clear-list{
+    color:red;
+    padding:20px;
+    visibility:hidden;
+}
+
+#goals{
+    width:410px;
+    height:30px;
+    border-radius:5px;
+    padding:10px;
+}
+#goal-submit-btn{
+    height:30px;
+    border-radius:5px;
+    width:75px; 
+}
+
+.goal-list{
+    display:flex;
+    justify-content: space-between;
+    width:490px;
+    margin:auto;
+    padding:10px;
+}
+.edit-btn, .delete-btn{
+    border:none;
+    background:none;
+    font-size:1rem;
+}
+.edit-btn:hover, .delete-btn:hover, .clear-list:hover{
+    cursor: pointer;
+    color:gold;
+}
+.edit-btn{
+    color:green;
+}
+.delete-btn{
+    color:red;
+}
+
+/*debt container*/
+.submitBTN{
+    padding:5px;
+}
+.item{
+    width:300px;
+}
+.money{
+    width:100px;
+    text-align:center;
+}
+.debt-list, .income-list, .expense-list{
+    display:flex;
+    justify-content: space-between;
+    width:460px;
+    padding:10px;
+    margin:auto;
+}
+.money-output-income{
+    padding-left:220px;
+}
+.money-output-debt{
+    padding-left:210px
+}
+#money-output{
+    padding-left:175px;
+}
+.output-total{
+    border-top: 1px solid black;
+    width:480px;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+    padding:20px;
+}
+.total{
+    width:100px;
+    text-align:center;
+    margin-right:50px;
+    border:hidden;
+    font-size:1rem;
+}
+.total:focus{
+    outline:none;
+}
+#deleteBTN{
+    color:red;
+    display:inline-block;
+    width:20px;
+    height:22px;
+}
+#deleteBTN:hover{
+    cursor: pointer;
+    background:red;
+    color:white;
+    border-radius:50%;
+}
+/*section container*/
+.second-container{
+    border: 2px solid lightgreen;
+    border-radius:10px;
+    text-align:center;
+    width:500px;
+}
+.second-container > h1{
+    background:lightgreen;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    text-align:center;
+}
+
+.income{ grid-area: income;}
+.expense{ grid-area: expense;}
+.summary{grid-area: summary;}
+.budget{grid-area:budget;}
+
+.section-container{
+    display:grid;
+    grid-template-areas:
+    'income expense'
+    'budget summary';
+    grid-gap: 10px;
+}
+.budget-input{
+    display:flex;
+    justify-content: space-evenly;
+    color:orange;
+    padding:20px;
+}
+.result{
+    padding:20px;
+    text-align:left;
+}
+.result-title{
+    font-weight: bold;
+    font-size:20px;
+    color:orange;
+}
+.result-form{
+    display:flex;
+    justify-content: space-evenly;
+    text-align:center;
+}
+/*container controlled by javascript*/
+#debt-output-total, #income-output-total, #expense-output-total{
+    visibility:hidden;
+}
+/*investment container*/
+.investment-container{
+    display:flex;
+    justify-content:space-around;
+    width:850px;
+}
+#investment-input, #investment-output{
+    width:400px;
+}
+#time{
+    width:100px;
+    padding:8px;
+    border-radius:6px;
+    border:2px solid black;
+    margin-left:60px;
+}
+.investment-form,.investment-output-form{
+    padding:20px;
+    text-align:left;
+}
+.investment-form > input, .investment-output-form > input{
+    margin:5px;
+}
+
+#starting-amount{
+    margin-left:100px;
+}
+#investment-time{
+    margin-left:47px;
+}
+#return-rate{
+    margin-left:90px;
+}
+#additional-contribution{
+    margin-left:44px;
+}
+#end-balance{
+    margin-left:135px;
+}
+#total-contribution{
+    margin-left:84px;
+}
+#interest-earned{
+    margin-left:110px;
+}
+#investment-submit-btn{
+    display:block;
+    margin:auto;
+    margin-top:10px;
+    width:350px;
+}
+
+/***screen adjustment ***/
+@media screen and (max-width:1135px){
+
+   .section-container{
+    display:grid;
+    grid-template-areas:
+    'income'
+    'expense'
+    'budget'
+    'summary';
+    grid-gap: 10px;
+    padding: 20px;
+    text-align:center;
+}
+.investment-container{
+    display:block;
+}
+}

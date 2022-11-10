@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8"/>
+        <title>Project #12 slider</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--icon library-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--------------------->
+    <link rel="stylesheet" href="sliderStyleSheet.css" />
+    </head>
+    <body>
+        <div class = "nav-bar-container">
+        <nav class ="nav-bar">
+            <div id ="logo">CD</div>
+            
+            <div class = "tabs">
+                <a class = "links"href ="#">Home</a>
+                <a class = "links" href ="#">About</a>
+                <a class = "links" href ="#">Visit</a>
+                <a class ="links" href ="#">Contact</a>
+            </div>
+
+            <div class = "socialmedia">
+                <a href ="#"><i class="fab fa-facebook-square"></i></a>
+                <a href ="#"><i class="fab fa-twitter-square"></i></a>
+                <a href ="#"><i class="fab fa-reddit-square"></i></a>
+                <a href ="#"><i class="fab fa-instagram-square"></i></a>
+                <a href="#"><i class="fab fa-pinterest-square"></i></a>
+            </div>
+        </nav>
+         <div id ="openNavBTN">
+                <i class= "fas fa-bars"></i>
+            </div>
+        </div>
+
+        <div class = "photo-container">
+            <div class ="photo">
+                <img id = "displayPic" src = "picture1.jpg" alt="pictures">
+            </div>
+            <div class = "moving-dots">
+                <button class ="dots"></button>
+                <button class ="dots"></button>
+                <button class ="dots"></button>
+                <button class ="dots"></button>
+                <button class ="dots"></button>
+            </div>
+        </div>
+        <article>
+            <button id = "pause">
+                <i class="fa fa-pause" aria-hidden="true"></i>
+            </button>
+            <h1>PARADISE</h1><br>
+            <a href="#" id = "explore">EXPLORE</a>
+        </article>
+<footer>
+  <div>Copyright <span><i class="far fa-copyright"></i> Challenging Deep Website Developer </div>
+</footer>
+        <script src = "sliderApp.js"></script>
+    </body>
+</html>

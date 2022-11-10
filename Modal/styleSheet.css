@@ -1,0 +1,167 @@
+/*****Global*********/
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+*{  
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin:0;
+    padding:0;
+    font-size: 1.5vw;
+    box-sizing: border-box;
+}
+body{
+    background-image:url(freedom.jpg);
+    height:100vh;
+    background-position: center;
+    background-size:cover;
+}
+/***top navigation bars***/
+.topNav{
+    background:black;
+    overflow:hidden;
+}
+
+.topNav a{
+    display:flex;
+    float:left;
+    color:white;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+    font-size:20px;
+    margin-top:10px;
+}
+.topNav a:hover{
+    background-color:#ddd;
+    color:black;
+}
+
+/**logo**/
+#CD{
+    font-family:'Monoton', cursive;
+    color:white;
+    padding:20px;
+    font-size:20px;
+    display:flex;
+    float:left;
+    margin-right:10rem;
+}
+.logo{
+    width:70px;
+    border-radius:50%;
+    display:flex;
+    float:left;  
+}
+/**toggle**/
+.open{
+    display:none;
+}
+.open:hover{
+    transform:scale(1.5);
+}
+.fa-bars{
+    font-size:25px;
+}
+@media screen and (max-width: 600px){
+    .tabs{display:none;}
+    .bottomNav a{display:none;}
+    .open{
+        display:block;
+        position:relative;
+        top:20px;
+        left:30px;
+    }
+}
+@media screen and (max-width: 600px){
+    .response{
+    background:none;
+    text-align:left;
+    font-size:20px;
+    position:relative;
+    display:block;
+    float:none;
+    width:30vw;
+    }
+}
+
+/**content**/
+.message{
+    display:block;
+    width:40vw;
+    position:relative;
+    top:150px;
+    padding-left:100px;
+}
+h1{
+    font-size:2.5rem;
+    color:white;
+}
+/**bottom navigation bar**/
+.bottomNav{
+    display:block;
+    margin:auto;
+    text-align:center;
+    position:relative;
+    top:450px;
+}
+.bottomNav a{
+    color:white;
+    padding:20px;
+}
+.bottomNav a:hover{
+    color:bisque;
+}
+/**modal background**/
+.modal{
+    display:none;
+    position:fixed;
+    z-index:1;
+    padding-top:100px;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    overflow:auto;
+    background-color:rgb(0,0,0);
+    background-color:rgba(0,0,0,0.4);
+}
+/**modal content**/
+.modal-content{
+    background-color:#fefefe;
+    margin:auto;
+    padding:20px;
+    border: 1px solid #888;
+    border-radius:5px;
+    width:40vw;
+    text-align:center;
+    padding:20px;
+}
+p{
+    font-size:1.75rem;
+    margin:30px;
+    font-weight:bold;
+}
+#subscribe{
+    font-size:1.2rem;
+    color:slateblue;
+}
+form{
+    padding:20px;
+}
+#submit{
+    background:rgb(185, 245, 185);;
+    border-radius:5px;
+}
+/**modal close button**/
+.close{
+    color:red;
+    float:right;
+    font-size:40px;
+    font-weight:bold;
+}
+.close:hover,
+.close:focus{
+    color:rgb(233, 149, 149);
+    cursor:pointer;
+    transform: scale(1.5);
+}

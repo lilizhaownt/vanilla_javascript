@@ -1,0 +1,55 @@
+/*Globle styling*/
+*{
+    font-family: 'Georama', sans-serif;
+    font-size: 1.5vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*end of global styling*/
+body{
+    background:white;
+    text-align:center;
+}
+
+.bar{
+    background:lightgrey;
+    float:left;
+    padding-left:10vw;
+    padding-right:10vw;
+    padding-top:1.5vh;
+    padding-bottom:1.5vh;
+    width:50vw;
+}
+.bar:hover{
+    cursor: pointer;
+    color:white;
+}
+h1{
+    color:white;
+    text-align:center;
+    font-size:1.5vw;
+    background:black;
+    display:block;
+    margin: auto;
+    width:30vw;
+    padding:20px;
+    border-radius: 1rem;
+    position:relative;
+    top:35vh;
+    left:1vw;  
+}
+button{
+    background:none;
+    color:black;
+    padding: 10px;
+    border-radius:1rem;
+    position:relative;
+    top:40vh;
+    left:1wv;
+}
+button:hover{
+    cursor: pointer;
+    background:lightgray;
+}

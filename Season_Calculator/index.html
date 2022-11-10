@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Project#12: Countdown timer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--icon library-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--------------------->
+    <link rel="stylesheet" href="seasonStyleSheet.css"/>
+</head>
+<body>
+<!--create a count down clock to each season-->
+<h1>How many days to the next season?</h1>
+<!---input field for season-->
+<!--change in background color according to season selected-->
+<div class = "input">
+    <form >
+        <label for = "seasons"> Choose A Season: </label><br><br>
+        <select id = "seasons" name = "seasonList" onmouseover ="stopTimer()">
+            <option value = "blank"></option>
+            <option value ="Summer" style ="color:gold"> Summer</option>
+            <option value ="Spring" style ="color:#90ee90"> Spring</option>
+            <option value ="Fall" style ="color:orange"> Fall</option>
+            <option value ="Winter" style ="color:#ADD8E6"> Winter</option>
+        </select>
+    </form>
+</div>
+<article class = "section-container">
+    <!--image change with season selected-->
+    <img id = "image" src ="fall.jpg" alt = "fall">
+    <div class = "content-container">
+        <h4>CURRENT SEASON:</h4>
+        <h4 id = "currentSeason">Fall</h4> 
+        <h4> Selected Season:</h4>
+         <p id = "selectedSeason"></p>
+         <p>Your selected season will start:</p>
+        <section class ="clock-container">
+            <button class = "time-display"><span id ="day">0</span><br>DAY</button>
+             <button class = "time-display"><span id ="hour">0</span><br>HR</button>
+              <button class = "time-display"><span id ="minute">0</span><br>MIN</button>
+              <button class = "time-display"><span id ="second">0</span><br>SEC</button>
+        </section>
+    </div>
+    <div class = "weather-container">
+     <section class = "place-time">
+        <h4 id = "place">Ashburn</h4>
+        <p id = "date-time">date,time</p>
+    </section>
+    <section class = "temperature">
+        <p style ="font-size:2rem" id = 'current-temp'>45</p>
+        <p id = "temp-description" style ="font-size:1.25rem">SUNNY</p>
+    </section>
+    <section>
+        <img id ="weather-icon" src ="" alt ="forcast">
+    </section>
+    </div>
+</article><br>
+<footer>
+ <p>Copyright <span><i class="far fa-copyright"></i> Challenging Deep Website Developer </p>
+</footer>
+<script src ="seasonApp.js"></script>
+</body>
+</html>

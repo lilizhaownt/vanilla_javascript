@@ -1,0 +1,241 @@
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/**navigation/ header**/
+
+header{
+    background:lightgrey;
+    height:60px;
+    width:100vw;
+    overflow:hidden;
+    position:fixed;
+    z-index: 1;
+}
+
+img{
+    width:40px;
+    height:auto;
+    border-radius:20%;
+    margin-left:20px;
+}
+#CD{
+    font-size:30px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:red;
+    text-shadow: 4px 2px yellow;
+    position:relative;
+    bottom:10px;
+}
+.tabs{
+    display:flex;
+    float:right;
+    padding:10px 20px 0px 20px;
+    color:black;
+}
+.tabs:hover{
+    color:orangered;
+}
+a{
+    text-decoration:none;
+}
+/**content**/
+h1, h4, .search-container,footer{
+    text-align:center;
+}
+h1{
+    font-size:2.5rem;
+    padding:100px 0px 0px 0px;
+}
+h4{
+    padding:20px;
+}
+#fire{
+    color:orangered;
+}
+/**search field**/
+.search-container {
+    margin:50px;
+    text-align:center;
+}
+.search-field{
+    width:60vw;
+    padding:5px;
+    border:1px solid black;
+    border-radius:5px;;
+}
+#search-glass{
+    width:2vw;
+    height:auto;
+    display:block;
+    margin:auto;
+}
+.search-button{
+    width:fit-content;
+    height:auto;
+    border:none;
+    background:none;
+    border-radius:5px;
+    position:relative;
+    right:2.75vw;
+    bottom:-0.3rem;
+    cursor: pointer;
+}
+.search-button:hover{
+    background:orange;
+}
+/* clears the ‘X’ from Internet Explorer */
+input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+/**QA section**/
+.grid-container{
+    width:95vw;
+    display:block;
+    margin:auto;
+    display:grid;
+    grid-template-columns:70vw 20vw;
+    grid-gap:20px;
+    padding:50px;
+}
+.grid-container > section{
+    padding:20px 0;
+    font-size:1.5rem;
+}
+.QA{
+    border-radius:5px;
+    background:rgb(240, 236, 236);
+}
+.question, .answer{
+    padding:10px 0;
+    width:90%;
+    display:block;
+    margin:auto;
+}
+.question{
+    background:none;
+    border:none;
+    text-align:left;
+    font-size:1.5rem;
+    padding:20px;
+}
+.active, .question:hover{
+    background:white;
+    cursor: pointer;
+}
+.answer{
+    background:white;
+    border-bottom:2px solid lightgrey;
+    max-height:0;
+    overflow:hidden;
+    transition:max-height 0.18s ease-out;
+    padding: 0 18px ;
+}
+.question:after{
+    content:'\002b';
+    color:orangered;
+    font-weight:bold;
+    float:right;
+    margin-left:5px;
+}
+.active:after{
+    content:"\2212";
+}
+/**email and phone***/
+
+.moreInfo-container{
+    background:rgb(235, 197, 126);
+    border-radius:5px;
+    padding:0.5rem;
+    text-align:left;
+}
+.moreInfo-container > p{
+    background:white;
+    padding:0.5rem;
+    border-radius:5px;
+    text-align:center;
+}
+.moreInfo-container > button{
+    padding:0.5rem;
+    border:none;
+    background:white;
+    border-radius:50%;
+    margin-top:5px;
+}
+.moreInfo-container >span{
+    background:white;
+    border-radius:5px;
+    padding:5px;
+}
+
+/**chat box**/
+
+.open-button{
+    width:100%;
+    background:rgb(151, 188, 201);
+    padding:0.5rem;
+    border-radius:5px;
+    margin-top:1rem;
+    cursor: pointer;
+}
+.open-button:hover{
+    background:rgb(216, 241, 250);
+}
+.chat-popup{
+    border:1px solid black;
+    margin-top:1rem;
+    padding:10px;
+    background:rgb(227, 240, 245);
+    text-align:center;
+    border-radius:5px;
+    display:none;
+}
+.closebtn{
+    float:right;
+    font-weight:bold;
+    font-size:1.5rem;
+    cursor: pointer;
+}
+.closebtn:hover{
+    color:orangered;
+    transform:scale(1.5);
+}
+textarea{
+    width:90%;
+    height:30vh;
+    font-size:0.75rem;
+    padding:5px;
+}
+.sendbtn{
+    width:90%;
+    padding:5px;
+    cursor: pointer;
+}
+.sendbtn:hover{
+    background:lightgrey;
+}
+/**move the moreInfo box below questions **/
+@media screen and (max-width:900px){
+    .moreInfo{
+        position:absolute;
+        bottom:-35vh;
+        width:73%;
+        background:white;
+    }
+    .socialmedia{
+        display:none;
+    }
+}
+/**footer**/
+.socialmedia > a{
+    color:orangered;
+    padding:10px;
+}

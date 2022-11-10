@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+*{  
+    font-family:monospace;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+body{
+    background:black;
+    color:white;
+}
+.nav-bar-container:hover{
+    background:white;
+    color:black;
+}
+nav{
+    background:inherit;
+    font-size:1.5rem;
+    display:flex;
+    justify-content: space-between;
+    padding: 0px 100px 0px 100px;
+}
+
+#openNavBTN {
+    display:none;
+}
+a{
+    text-decoration: none;
+    color:inherit; 
+    padding:10px;
+}
+a:hover{
+    background:lightgreen;
+}
+#logo{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Train One', cursive;
+    color:inherit;
+}
+.tabs, .socialmedia{
+    padding-top:20px;
+}
+
+article{
+    font-size:1.5rem;
+    text-align:center;
+}
+.photo-container{
+    display:block;
+    margin:auto;
+    width:600px;
+    padding:50px 50px 30px 50px;
+}
+img{
+    width:500px;
+    aspect-ratio:2/1.25;
+    display:block;
+}
+.moving-dots{
+    display:block;
+    margin:auto;
+    width:200px;
+    display:flex;
+    align-content:space-between;
+    gap:10%;
+    padding:10px;
+}
+.dots{
+    background:white;
+    width: 20px;
+    height:20px;
+    border-radius:50%;
+    border: 1px solid black;
+}
+.showdots{
+    background:lightgreen;
+}
+#pause{
+    width:50px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+#pause:hover{
+    cursor: pointer;
+    background:lightgreen;
+}
+#explore{
+    border:5px double white;
+    color:white;
+}
+footer {
+    text-align: center;
+    margin-top: 50px;
+
+}
+/***screen adjustment**/
+@media screen and (max-width:870px) {
+   
+    .socialmedia{
+        display:none;
+    }
+   
+}
+@media screen and (max-width:650px){
+    
+    #openNavBTN {
+        display: block;
+        position:absolute;
+        color:inherit;
+        top:30px;;
+        right:50px;
+        font-size:1.5rem;
+    }
+    #openNavBTN:hover{
+        transform:rotateZ(90deg);
+        cursor: pointer;
+    }
+  nav{
+      display:block;
+  }
+   .links{
+       display:none;
+   }
+   .showLinks{
+       display:block;
+   }
+}

@@ -1,0 +1,268 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Challenge #13: To do List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--icon library-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--------------------->
+    <link rel="stylesheet" href="liststyleSheet.css" />
+   
+    <!---chart.js CDN-->
+    <script src = "https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+</head>
+<body>
+<!--The goal of this website is to allow a person with limited monthly income to set their weekly budget.-->
+<nav>
+    <div id ="icon">CD</div>
+    <div id ="links">
+        <a href = "#step1"> Set Goals</a>
+        <a href = "#step2"> Debts Calculator</a>
+        <a href = "#step3"> Budget Calculator</a>
+        <a href = "#step4"> Investment Calculator</a>
+        <a href = "#step5"> Community Resources</a>
+    </div>
+</nav>
+<header>
+<h1>Steps to achieving your financial dreams</h1>
+
+<p>What are your financial dreams?  To own a house?  To pay off your debt?  To retire early and live a financially indepedent life? Regardless of your earning, you can achieve your financial dreams with budgetting and investing.  Let's plan for your financial future together!</p>
+</header>
+<article>
+<!--step 1: set your goals-->
+<h2 id ="step1">Step 1: Set your financial goals</h2>
+<p>It is hard to achieve a goal without writing it down.  List your finacial goals from the easiest to the hardest to achieve.  Focus on the easiest goal first and delete them as you accomplish them.</p>
+
+<section class ="first-container">
+    <form action = "#" class = "goal-form">
+        <div class = "alert">alert</div>
+        <h1>FINANCIAL GOALS</h1>
+         <div class = "goal-input">
+             <input type = "text" id ="goals" placeholder ="e.g. pay off debt">
+             <button type ="submit" id ="goal-submit-btn">submit</button>
+         </div>
+    </form>
+<div>
+    <div class = "goal-output">
+    </div>
+    <div class = "clear-list">clear all</div>
+</div>
+</section>
+<!--end of step 1: list your goals-->
+<!--step 2: List all your debt-->
+<h2 id ="step2">Step 2: How much debt do you have? </h2>
+<p>There are two kinds of debt: good and bad.  Good debt is what you must have in order to build wealth.  For example, a mortage is a good debt because it allows you to buy a house.  A house often increase in value over the years. Another example of good debt is a business loan.  Bad debts are often a result bad spending habits.  An example of bad debt is credit card debt that comes with high interest rates.  Whether it is a good debt or bad debt, debt prevents you from having true financial freedom.  To pay off your debt fast, attack the debt with the highest interest rate first.</p>
+<section class = "first-container" class = "debt-container">
+        <div class = "alert">alert</div>
+        <h1>DEBT</h1>
+         <div class = "debt-input">
+            <form action ="#" id ="debt-form">
+                <label for ="debt">List your debt from the highest to lowest interest rate </label><br><br>
+                <input type ="text" class = "item" id = "debt" placeholder ="debt..etc">
+                <input type = "number" class ="money" id ="money-debt" placeholder ="500">
+                <button type = "submit" class = "submitBTN" id ="debt-submit-btn">Submit</button>
+            </form>
+        </div>
+        <div class = "debt-output">
+           <!--power by javascript--> 
+        </div>
+        <div class ="output-total" id ="debt-output-total">
+            <label for ="total">Total = </label>
+            <input type ="number" id ="debt-total" class ="total" placeholder ="1000"> 
+        </div>
+    </section>
+
+<!--end of step 2: debts-->
+<!--step 3: Set your budget-->
+<h2 id ="step3">Step 3: Set your budget </h2>
+<p>With your financial goals in mind, it is important to budget your income in order to reach those goals.  Your budget should include money to pay for your expenses, debt, and emergency fund. An aggressive budget would be 50% expense /30% debt reduction /20% emergency saving.  We recommend at least 30% of your total income should go toward debt reduction and an emergency saving.</p>
+<p>Why do should you include emergency saving as part of your budget?  Life is not perfect.  We all encountered challenges such as loosing a job, injuries, illness, accidents, or car repairs.  An emergency saving prevents you from going into debt during those unfortunate life events.  How much emergency saving is enough?  We recommend that you start with 3 months worth of expenses in mind.  You can increase the amount as your finacial circumstances improve.</p>
+<p>When you set your budget, it is important to keep in mind where your money is coming from?  Do you have a regular job that pays weekly, biweekly, or monthly?  Do you get paid by commission where some months you would not have an income?  Set your budget to reflect your income circumstances.  For instances, set a weekly budget if you get paid weekly from a regular job.</p>
+
+
+<div class = "section-container">
+         
+    <section class = "second-container" class = "income-container">
+        <h1>INCOME</h1>
+         <div class = "alert">alert</div>
+         <div class = "income-input">
+            <form action ="#" id = "income-form">
+                <label for ="income">List all your incomes </label><br><br>
+                <input type ="text" class = "item" id = "income" placeholder ="job..etc">
+                <input type = "number" class ="money" id ="money-income" placeholder ="500">
+                <button type = "submit" class = "submitBTN" id ="income-submit-btn">Submit</button>
+            </form>
+        </div>
+        <div class = "income-output">
+            <!--power by javascript-->
+        </div>
+        
+        <div class ="output-total" id ="income-output-total">
+            <label for ="total">Total = </label>
+            <input type ="number" class ="total" id ="income-total" placeholder ="1000"> 
+        </div>
+    </section>
+    
+    <section class = "second-container" class = "expense-container">
+        <h1>EXPENSE</h1>
+         <div class = "alert">alert</div>
+         <div class = "expense-input">
+            <form action ="#" id ="expense-form">
+                <label for ="expense">List all your expenses</label><br><br>
+                <input type ="text" class = "item" id = "expense" placeholder ="rent">
+                <input type = "number" class ="money" id ="money-expense" placeholder ="500">
+                <button type = "submit" class = "submitBTN" id ="expense-submit-btn">Submit</button>
+            </form>
+        </div>
+        <div class = "expense-output">
+            <!--power by javascript-->   
+        </div>
+        
+        <div class ="output-total" id = "expense-output-total">
+            <label for ="total">Total = </label>
+            <input type ="number" class ="total" id ="expense-total" placeholder ="1000"> 
+        </div>
+    </section>
+
+<section class ="second-container" class ="budget-container">
+        <h1>BUDGET GOAL</h1>
+        <div class = "budget-goal-input">
+            <form action ="#" class = "budget-form">
+                <div class = "alert">alert</div>
+                <label for ="budget-goal">Set your budget goal</label>
+                <div class = "budget-input">
+                <div>
+                <input type ="number" class = "money" id = "budget-expense" placeholder ="e.g. 50%">
+                <div>EXPENSE</div>
+                </div>
+                <div>
+                <input type = "number" class = "money" id ="budget-debt" placeholder ="e.g. 30%">
+                <div>DEBT</div>
+                </div>
+                <div>
+                <input type = "number" class ="money" id ="budget-saving" placeholder ="e.g. 20%">
+                <div>SAVING</div>
+                </div>
+                <div>
+                <button type = "submit" class ="submitBTN" id ="budget-submit-btn">Submit</button>
+                </div>
+            </div>
+            </form>
+            <div class = "reset-buttons">
+                <div>If you made changes, click Recalculate to get new numbers.</div><br>
+                <button id ="re-calculate" class ="submitBTN">Recalculate</button><br><br>
+                <div>To clear all information, click the Reset button</div><br>
+                <button id ="reset-calculator" class = "submitBTN">Reset Calculator</button>
+            </div>
+        </div>
+    </section>
+
+
+<section class = "second-container" class ="summary-container">
+        <h1>SUMMARY</h1>
+        <div class = "result">
+        <div class ="alert">alert</div>
+        <div class = "result-title">Budget allocation based on your goals and income:</div>
+            <form action = # class = "result-form">
+                <div>
+                <div>Expense $</div>
+                    <input type ="number" class ="money" id ="expense-allocation"><br>
+                </div>
+                <div>
+                <div>Debt $</div>
+                    <input type ="number" class ="money" id = "debt-allocation"><br>
+                </div>
+                <div>
+                <div>Saving $</div>
+                    <input type ="number" class = "money" id ="saving-allocation">
+                </div>
+            </form>  
+            
+        <div class = "result-title">Debt remaining after payment:</div>
+            <form action = # class = "result-form">
+                <div>
+                <div>Beginning Debt $</div>
+                    <input type ="number" class ="money" id ="begin-debt">
+                </div>
+                <div>
+                <div> Remaining Debt $</div>
+                    <input type ="number" class ="money" id ="remain-debt">
+                </div>
+            </form>
+        <div class = "result-title">Based on your weekly expense, your three months emergency saving need is:</div>
+            <form action = #>
+                <label for ="emergency saving">Emergency Saving $</label>
+                    <input type ="number" class ="money" id ="emergency-saving">
+            </form>
+        </div>    
+    </section>
+
+</div><!--end of section-container-->
+<!--end of step 3: set your budget-->
+<!--Step 4: Invest-->
+<h2 id ="step4">Step 4: Investments</h2>
+<p>Once you have 3 months of emergency saving, you should put a portion of your income into investment.  Investment is a powerful tool for wealth building.  Use the calculator below to see how your money can grow over time.</p>
+<section class ="investment-container">
+    <div id = "investment-input" class ="second-container">
+        <h1>INPUT</h1>
+        <div class ="alert">alert</div>
+        <form action = # class ="investment-form">
+            <label for ="starting amount">Starting Amount $</label>
+            <input type ="number" class ="money" id = "starting-amount" placeholder ="$100"><br>
+            <label for ="Investment time"> Investment Time in years</label>
+            <input type ="number" class ="money" id = "investment-time" placeholder ="10 years"><br>
+            <label for ="rate of return">Est. rate of return %</label>
+            <input type ="number" class ="money" id = "return-rate" placeholder ="10%"><br>
+            <label for ="additional 
+            contribution">Additional Contribution $</label>
+            <input type ="number" class ="money" id = "additional-contribution" placeholder ="$10"><br>
+            <label for = "contribution frequency">Contribution Frequency</label>
+            <select id ="time">
+                <option value ="annual">Annually</option>
+                <option value ="monthly">Monthly</option>
+                <option value ="biweekly">Biweekly</option>
+                <option value ="weekly">Weekly</option>
+            </select>
+            <button type ="submit" class ="submitBTN" id = "investment-submit-btn">Calculate</button>
+        </form>
+    </div>
+    <div id  ="investment-output" class ="second-container">
+        <h1>RESULT</h1>
+        <div id = "graph">
+            <canvas id ="chart"></canvas>
+        </div>
+        <div class = "legends">
+            <form action =# class ="investment-output-form">
+                <label for ="Endbalance">End Balance $</label>
+                <input type ="number" class = "money" id ="end-balance"><br>
+                <label for ="Total contribution">Total Contribution $</label>
+                <input type ="number" class = "money" id ="total-contribution"><br>
+                <label for ="Interest">Interest Earned $</label>
+                <input type ="number" class = "money" id ="interest-earned"><br>
+            </form>
+        </div>
+    </div>
+</section>
+<!--end of step 4-->
+
+<!--Step 5: Seek help-->
+<h2 id ="step5">Step 5: Seek help if you cannot meet your needs</h2>
+<p>It is perfectly normal to need help.  If your income cannot cover your weekly NEEDS (not WANTS!) and that you cannot increase your income, you should reach out to your local charities.  Below are a list of non-profit organizations that can help you get through your challenges.</p>
+
+<ul>
+<li> Make use of your local <a href ="https://www.feedingamerica.org/find-your-local-foodbank">Food banks</a> to help you acchieve your expense budget.</li>
+<li> Need clothes? <a href ="https://www.salvationarmyusa.org/usn/"> Salvation Army </a> gives out good quality donated clothes. </li>
+<li> Need to see a doctor but have no insurance.  Check out your local <a href ="https://www.salvationarmyusa.org/usn/">Free Clinics. </a></li>
+<li> Need help with rent? <a href ="https://www.consumerfinance.gov/coronavirus/mortgage-and-housing-assistance/renter-protections/find-help-with-rent-and-utilities/">Consumer Finance</a> can help.</li>
+</ul>
+<!--end of Step 4 seek help-->
+</article>
+<footer>
+  <div>Copyright <span><i class="far fa-copyright"></i> Challenging Deep Website Developer </div>
+</footer>
+<script type = "module" src ="mainApp.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+/*Globle styling*/
+*{
+    font-family: 'Georama', sans-serif;
+    font-size: 1.5vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align:center;
+    background:beige;
+}
+
+h1{
+    font-size:1.5rem;
+    color:purple;
+}
+
+div{
+    font-size: 20vw;
+    padding:2rem;
+}
+
+button{
+    width:5rem;
+    border-radius: 1rem;
+}
+button:hover{
+    background:aqua;
+}
+
+#increase{
+    color: green;
+    font-style:bold;
+}
+
+#decrease{
+color: red;
+font-style: bold;
+}

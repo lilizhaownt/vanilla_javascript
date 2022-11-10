@@ -1,0 +1,186 @@
+/*----Global----- */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+*{  
+    font-family:'Open Sans', sans-serif;;
+    font-size: 1.5vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align:center;
+    background:rgb(131, 243, 243);
+}
+.navbar{
+    background:white;
+    overflow:hidden;
+    position:relative;
+    z-index:1;
+}
+
+a{
+    display:flex;
+    float:left;
+    text-decoration:none;
+    z-index:1;
+}
+/*----logo---------*/
+.logo{
+    background:white;
+    display:flex;
+    float:left;
+    padding:2px;
+    z-index:1;
+}
+#logo-word{
+    font-size:20px;
+    color:steelblue;
+    font-weight: bold;
+    text-shadow: 2px 3px lightgray;
+    z-index:1;
+}
+img{
+    width:50px;
+    border-radius:50%;
+}
+
+/*-----selection tabs---------*/
+.tabs{
+    color:black;
+    font-weight:bold;
+    font-size:1.2rem;
+    background:white;
+    padding: 10px 10px 0px 50px;
+    position:relative;
+    left:3rem;
+    
+}
+.tabs:hover{
+    color:#55acee;
+}
+
+/*-----social media icons-----*/
+.fa{
+    width:1.10rem;
+    font-size:0.75rem;
+    padding:5px;
+    position:relative;
+    left:15rem;
+    margin:5px;
+}
+.fa:hover{
+    opacity:0.7;
+}
+.fa-facebook{
+    background:#3B5998;
+    color:white;
+    border-radius:50%;
+}
+.fa-twitter{
+    background: #55acee;
+    color:white;
+    border-radius:50%;
+}
+.fa-linkedin{
+    background: #007bb5;
+    color:white;
+    border-radius:50%;
+}
+.fa-instagram{
+    background:#125688;
+    color:white;
+    border-radius:50%;
+}
+/*-----toggle----------*/
+.toggle{
+    background:white;
+}
+.fa-bars{
+    color:black;
+    font-size:20px;
+    display:none;
+    background:none;
+}
+
+/*---responsive media----*/
+
+@media screen and (max-width:600px){
+    .tabs{
+        display:none;
+    }
+    .icons{
+        display:none;
+
+    }
+    .fa-bars{
+        display:block;
+        float:right;
+        position:relative;
+        left:40rem;
+    }
+   
+    .message{
+        width:auto;
+        height:auto;
+        font-size:7rem;
+    }
+   
+}
+
+
+@media screen and (max-width:600px){
+   .response{
+    background:none;
+    text-align:left;
+    font-size:20px;
+    position:relative;
+    display:block;
+    float:none;
+    width:15vw;
+    top:15px;
+    left:-30px;
+    z-index:1;
+   }
+   .move{
+       position:relative;
+       top:-190px;
+       left:63rem;
+       transform: rotate(90deg);
+       transform-origin:right top;
+       color:#55acee;
+   }
+}
+
+/*-----body------*/
+h1{
+    background:white;
+    width:50vw;
+    display:block;
+    margin:auto;
+    font-size:3rem;
+    position:relative;
+    top:10rem;
+    color:rgb(69, 188, 235);
+    border:10px solid skyblue;
+    border-radius:25%;
+    border-style:double;
+}
+.cloud{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: url(cloud.png);
+    animation: animate 60s linear;
+}
+@keyframes animate{
+    0%{
+        background-position:0px;
+    }
+    100%{
+        background-position: 5540px;
+    }
+}
