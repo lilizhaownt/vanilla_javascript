@@ -2,5 +2,5 @@
 Summarized different vanilla javascript projects  
 # Languages
 HTML, CSS, JavaScript
-# Others
+# Tools
 Bootstrap, Chart.js, API
